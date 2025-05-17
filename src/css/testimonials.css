@@ -19,15 +19,13 @@ padding-bottom: 64px;
         line-height: 1.2;
         letter-spacing: 0.01em;
         text-align: center;
-         color: #0d0b0a;
-         margin-bottom: 20px;}
+        margin-bottom: 20px;}
 
 .tm-title-text {
     font-weight: 400;
         font-size: 18px;
         line-height: 1.6;
         text-align: center;
-        color: #0d0b0a;
         margin-bottom: 24px;
 }
 
@@ -57,9 +55,7 @@ padding-bottom: 64px;
         font-size: 22px;
         line-height: 1.6;
         text-align: center;
-        color: #0d0b0a;
-       
-
+        
 }
 
 .tm-avatar-box {
@@ -78,7 +74,7 @@ padding-bottom: 64px;
         font-size: 18px;
         line-height: 1.6;
         text-align: center;
-        color: #0d0b0a;
+       
 }
 
 .tm-avatar-text {
@@ -86,8 +82,7 @@ padding-bottom: 64px;
         font-size: 16px;
         line-height: 1.5;
         text-align: center;
-        color: #0d0b0a;
-}
+     }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
@@ -147,6 +142,5 @@ padding-bottom: 64px;
         .tm-title {
      margin: bottom 24px;
     }
-
 
 }
