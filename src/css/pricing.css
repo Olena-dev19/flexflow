@@ -16,10 +16,8 @@
 
 .pricing-litl-title {
     font-weight: 600;
-    font-size: 16px;
     line-height: 1.5;
     text-align: center;
-    color: #0d0b0a;
     margin-bottom: 16px;
 }
 
@@ -30,16 +28,12 @@
     line-height: 1.2;
     letter-spacing: 0.01em;
     text-align: center;
-    color: #0d0b0a;
     margin-bottom: 20px;
 }
 
 .pricing-text {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
     text-align: center;
-    color: #0d0b0a;
     margin-bottom: 48px;
 
 }
@@ -65,6 +59,32 @@
     line-height: 1.4;
     letter-spacing: 0.01em;
     text-align: center;
-    color: #0d0b0a;
     margin-bottom: 8px;
 }
+
+.pricing-card-item-price {
+    font-family: "Cabin",sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.pricing-card-list {
+    min-width: 295px;
+    min-height: 126px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pricing-card-info {
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
