@@ -135,11 +135,18 @@ padding-bottom: 64px;
 
     .tm-item {
         flex-basis: calc((100% - 24px) / 2);
+        }
+
+     .tm-item:hover,
+    .tm-item:focus
+      {
+    transform: scale(1.05);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    
     }
         .tm-title {
-     margin: bottom 24px;}
+     margin: bottom 24px;
+    }
 
 
 }
-/* Retina */
-@media only screen and (min-resolution: 192dpi) {}
