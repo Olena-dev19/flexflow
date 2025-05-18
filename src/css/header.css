@@ -79,7 +79,12 @@ border: 1px solid #c2d9fc;
                 line-height: 1.6; 
                 }
  .btn-mobile {
-            display: none;   }
+            display: none;   } 
+
+    .btn-desktop:hover,
+    .btn-desktop:focus {
+ background-color: #88b6fb;
+   }          
     
 }
 
@@ -132,13 +137,7 @@ font-weight: 400;
             margin-left: auto;  
         margin-right: auto;     }
 
- .btn-desktop {
-     display: inline-block;   }
- 
- .btn-desktop:hover,
- .btn-desktop:focus {
-             background-color: #88b6fb; } 
-}
 
+}
 
 
