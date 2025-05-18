@@ -150,6 +150,8 @@
     }
     .pricing-card-title {
         font-size: 22px;
+    }
+    .pricing-card-title-last {
         margin-bottom: 24px;
     }
     .pricing-card-item-price {
@@ -177,6 +179,10 @@
     .pricing-card-list-full {
         margin: 0;
         min-height: 210px;
+
+    }
+    .pricing-card-info-hidden {
+        display: none;
     }
 }
 
@@ -193,25 +199,49 @@
     }
     .pricing-card {
         flex-wrap: nowrap;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2,1);
     }
+    
     .pricing-card-item {
-        width: 421px;
+        min-width: 421px;
         min-height: 509px;
         padding: 32px;
+        transform: translate(0%, 0%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .pricing-card-item:last-of-type {
-        min-width: 340px;
+        min-width: 421px;
         padding: 32px;
         
     }
+    .pricing-card-item:hover {
+        transform: translate(0, 0) scale(1.1);
+    }
     .pricing-card-list {
         margin-bottom: 116px;
+        min-width: 357px;
     }
     .pricing-card-item-full-price {
         position: unset;
     }
     .pricing-card-full {
-        flex-direction: column;
+        display: block;
+    }
+    .pricing-card-title {
+        margin-bottom: 8px;
+    }
+    .pricing-card-item-price {
+        margin-bottom: 32px;
+    }
+    .pricing-card-list-full {
+        margin-bottom: 32px;
+    }
+    .pricing-card-button {
+        min-width: 357px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .pricing-card-button:hover {
+        background-color: #88B6FB;
     }
 }
 
