@@ -22,21 +22,25 @@
     display: flex;
     flex-direction: column;
     padding: 48px 16px;
+    gap: 20px;
 }
-
+.dv-hero-title{
+    padding: 0;
+}
 .hero-title {
     font-family: var(--second-family);
     font-weight: 400;
     font-size: 44px;
     line-height: 120%;
-    letter-spacing: 1%;
+    letter-spacing: 0.01em;
     color:#0d0b0a;
-    margin-bottom: 20px;
+    
 }
 .hero-dscr{
     display: flex;
     flex-direction: column;
     gap: 24px;
+
 }
 .hero-text{
     font-family:var(--font-family);
@@ -74,23 +78,26 @@
     .hero-container {
         max-width: 768px;
     }
-
+    
     .hero-back-image {
         width: 768px;
         height: 359px;
-        margin-bottom: 24px;
     }
-
+        .hero-content {
+            padding: 24px 0 24px 32px;
+            gap:8px;
+        }
+    .dv-hero-title{
+        margin-right: 92px;
+        padding-right: 221px;
+    }
     .hero-title{
-        padding-left: 32px;
-        margin-bottom: 8px; 
+       
     }
 
     .hero-text{
         font-size: 18px;
-        padding-left: 32px;
-        padding-top: 8px;
-        padding-bottom: 32px;
+        margin-top: 8px;
     }
         
     .hero-buttons{
