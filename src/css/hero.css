@@ -1,6 +1,12 @@
+:root {
+    --font-family: "Sarabun", sans-serif;
+    --second-family: "Cabin", sans-serif;
+    --third-family: "Roboto", sans-serif; }
+
 /* Hero */
 .hero-container {
     max-width: 375px;
+    padding: 0;
 }
 
 .hero-back-image {
@@ -10,22 +16,59 @@
     background-position: center;
     width: 375px;
     height: 301px;
-    padding: 0;
 }
-
+ 
 .hero-content {
+    display: flex;
+    flex-direction: column;
     padding: 48px 16px;
 }
 
 .hero-title {
-    font-family: Cabin;
+    font-family: var(--second-family);
     font-weight: 400;
     font-size: 44px;
     line-height: 120%;
     letter-spacing: 1%;
+    color:#0d0b0a;
+    margin-bottom: 20px;
+}
+.hero-dscr{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.hero-text{
+    font-family:var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
 }
 
+.hero-buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
+}
+.button-join{
+    border: 1px solid #c2d9fc;
+        border-radius: 100px;
+        padding: 10px 0;
+        text-align: center;
+        height: 46px;
+        background: #c2d9fc;
+        margin-right: 14px;
+}
+.button-learn-more{
+    border: 1px solid rgba(255, 255, 255, 0);
+        border-radius: 100px;
+        padding: 10px 0;
+        text-align: center;
+        height: 46px;
+        background: rgba(13, 11, 10, 0.05);
+        margin-right: 14px;
+}
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
     .hero-container {
@@ -35,7 +78,36 @@
     .hero-back-image {
         width: 768px;
         height: 359px;
+        margin-bottom: 24px;
     }
+
+    .hero-title{
+        padding-left: 32px;
+        margin-bottom: 8px; 
+    }
+
+    .hero-text{
+        font-size: 18px;
+        padding-left: 32px;
+        padding-top: 8px;
+        padding-bottom: 32px;
+    }
+        
+    .hero-buttons{
+        flex-direction: row;
+        margin: 32px 336px 24px 32px;
+    }
+    
+    .button-join{
+        width: 144px;
+        height: 46px;
+        padding: 10px 24px;
+    }
+        .button-learn-more{
+            width: 144px;
+                height: 46px;
+                padding: 10px 24px;
+        }
 }
 
 /* Styles for Desktop devices */
