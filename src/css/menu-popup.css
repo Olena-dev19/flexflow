@@ -1,0 +1,158 @@
+/* Mobile menu */
+
+
+.mobile-menu {
+    background-color: #f2fafa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.header-mobile-menu {
+
+    background-color: #f2fafa;
+    padding: 16px 16px 160px 16px;
+     width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mob-menu-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-close-btn {
+    background-color: transparent;
+    border: none;
+    width: 48px;
+    height: 48px;
+}
+
+.mob-menu-list-box {
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px 16px 160px 16px;
+            min-width: 320px;
+            min-height: 748px;
+}
+
+.mob-menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 36px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 12px 0px;
+}
+
+
+.btn-mobile-menu {
+    display: inline-block;
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    padding: 4px 20px;
+    width: 70px;
+    height: 34px;
+    background: #c2d9fc;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+
+}
+
+.btn-mobile-menu:hover,
+.btn-mobile-menu:focus,
+.btn-mobile-menu-scnd:hover,
+.btn-mobile-menu-scnd:focus {
+    background-color: #88b6fb;
+}
+
+
+.btn-tab-menu {
+    display: none;
+}
+
+
+
+.btn-mobile-menu-scnd {
+    display: inline-block;
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 343px;
+    height: 46px;
+    margin: 0 auto;
+    background: #c2d9fc;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+/* Styles for Tablet devices */
+
+@media only screen and (min-width: 768px) {
+
+    .btn-tab-menu {
+        display: inline-block;
+        border: 1px solid #c2d9fc;
+        border-radius: 100px;
+        padding: 10px 24px;
+        width: 204px;
+        height: 46px;
+        background: #c2d9fc;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .btn-mobile-menu {
+        display: none;
+    }
+
+
+    .btn-mobile-menu-scnd {
+        border: 1px solid #c2d9fc;
+        border-radius: 100px;
+        padding: 10px 24px;
+        width: 204px;
+        height: 46px;
+        margin-left: 0;
+    }
+}
+
+
+/* Styles for Desktop devices */
+
+@media screen and (min-width: 1336px) {
+    .mobile-menu {
+        display: none;
+    }
+}
