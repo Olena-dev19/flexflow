@@ -142,15 +142,19 @@
         min-width: 768px;
        
     }
+
     .pricing-card-item:last-of-type {
        min-width: 704px;
+       padding: 86px 0;
+       position: relative;
     }
     .pricing-card-title {
         font-size: 22px;
+        margin-bottom: 24px;
     }
     .pricing-card-item-price {
         font-size: 72px;
-        margin-bottom: 32px;
+        margin-bottom: 24px;
     }
     .pricing-card-list {
         min-width: 273px;
@@ -158,6 +162,21 @@
     }
     .pricing-card-button {
         min-width: 308px;
+    }
+    .pricing-card-item-full-price {
+        position: absolute;
+        top: 86px;
+        left: 121px;
+    }
+    .pricing-card-full {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+        gap: 32px;
+    }
+    .pricing-card-list-full {
+        margin: 0;
+        min-height: 210px;
     }
 }
 
@@ -176,15 +195,23 @@
         flex-wrap: nowrap;
     }
     .pricing-card-item {
-        min-width: 340px;
+        width: 421px;
         min-height: 509px;
+        padding: 32px;
     }
     .pricing-card-item:last-of-type {
         min-width: 340px;
+        padding: 32px;
         
     }
     .pricing-card-list {
         margin-bottom: 116px;
+    }
+    .pricing-card-item-full-price {
+        position: unset;
+    }
+    .pricing-card-full {
+        flex-direction: column;
     }
 }
 
