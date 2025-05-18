@@ -136,7 +136,7 @@ padding-bottom: 64px;
     .tm-item:focus
       {
     transform: scale(1.05);
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 0.25);
     
     }
         .tm-title {
