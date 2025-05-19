@@ -17,7 +17,7 @@
     font-weight: 600;
     line-height: 1.5;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 
@@ -122,11 +122,15 @@
     .pricing {
         padding: 40px 0;
     }
+    .pricing-litl-title {
+        margin-bottom: 16px;
+    }
     .pricing-title {
         margin-bottom: 24px;
     }
     .pricing-text {
         font-size: 18px;
+        margin-bottom: 24px;
     }
     .pricing-card-item {
         min-width: 340px;
@@ -156,7 +160,7 @@
     }
     .pricing-card-item-price {
         font-size: 72px;
-        margin-bottom: 24px;
+        margin-bottom: 32px;
     }
     .pricing-card-list {
         min-width: 273px;
