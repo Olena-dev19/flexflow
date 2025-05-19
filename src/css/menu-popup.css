@@ -29,7 +29,7 @@
     padding: 16px 16px 160px 16px;
     min-width: 100%;
     min-height: 100%;
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: column;
     
