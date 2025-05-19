@@ -1,10 +1,220 @@
 /* Team  */
 
-/* Styles for Tablet devices */
+/*
+
+
 @media only screen and (min-width: 768px) {}
 
-/* Styles for Desktop devices */
+
 @media only screen and (min-width: 1336px) {}
 
-/* Retina */
+
 @media only screen and (min-resolution: 192dpi) {}
+
+*/
+
+.team-section {
+    padding: 40px 16px;
+    text-align: center;
+}
+
+.team-header .subtitle {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #0D0B0A;
+}
+
+.team-header h2 {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.team-header .description {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #0D0B0A;
+    margin-bottom: 32px;
+}
+
+.team-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.team-card {
+    background: transparent;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: none;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 343px;
+}
+
+.team-card picture,
+.team-card img {
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+    max-width: 343px;
+    margin: 0 auto;
+}
+
+.team-card h3 {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 12px 0 0;
+}
+
+.team-card .role {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #0D0B0A;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.team-card .bio {
+    max-width: 343px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #0D0B0A;
+}
+
+.team-card .socials a {
+    margin: 0px;
+    display: inline-block;
+}
+
+.team-card .socials img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Tablet: 768px */
+@media only screen and (min-width: 768px) {
+    .team-header h2 {
+        font-size: 52px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+        max-width: 768px;
+    }
+
+    .team-card picture,
+    .team-card img {
+        max-width: 340px;
+        height: auto;
+    }
+}
+
+/* Desktop: 1336px+ */
+@media only screen and (min-width: 1336px) {
+    .team-header h2 {
+        font-size: 52px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        gap: 40px;
+    }
+
+    .team-card picture,
+    .team-card img {
+        width: 421.333px;
+        height: auto;
+    }
+}
+
+.team-card .socials {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 12px;
+
+}
+
+.media-container-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Загальні стилі для всіх SVG */
+.media-container-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #0D0B0A;
+    transition: fill 0.2s ease;
+}
+
+/* --- LinkedIn: чорний фон, біла іконка, закруглення 10% --- */
+.media-container-icon.linkedin {
+    background-color: #0D0B0A;
+    border-radius: 10%;
+    padding: 4px;
+    width: 26px;
+    height: 26px;
+}
+
+.media-container-icon.linkedin svg {
+    fill: #fff;
+    width: 18px;
+    height: 18px;
+}
+
+.media-container-icon.linkedin:hover,
+.media-container-icon.linkedin:focus {
+    background-color: #4D5664;
+}
+
+.media-container-icon.linkedin:hover svg,
+.media-container-icon.linkedin:focus svg {
+    fill: #fff;
+}
+
+.media-container-icon.facebook:hover svg,
+.media-container-icon.facebook:focus svg {
+    fill: #4D5664;
+}
+
+/* --- Instagram: кругла, змінюється тільки svg --- */
+.media-container-icon.instagram {
+    border-radius: 50%;
+}
+
+.media-container-icon.instagram:hover svg,
+.media-container-icon.instagram:focus svg {
+    fill: #4D5664;
+}
