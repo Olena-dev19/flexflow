@@ -1,16 +1,319 @@
 /* Footer */
+.footer {
+    background: #dfebeb;
+    padding: 48px 16px;
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 32px;
+}
+.footer .container {
+gap: 48px;
+border: 0px solid rgba(13, 11, 10, 0.15);
+border-radius: 16px;
+padding: 32px;
+background: #f8fbfe;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.footer-copyright-desktop {
+    display: none;
+}
+.flex-foot {
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 20px;
+}
+.footer-logo-svg {
+    width: 84px;
+height: 36px;
+}
+.footer-text {
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.6;
+color: #0d0b0a;
+max-width: 264px;
+    margin-bottom: 0px;
+    font-family: "Sarabun", sans-serif;
+    padding-bottom: 20px;
+    
+}
+.footer-subscribe-form {
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 12px;
+}
+.footer-subscribe-input {
+    display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: row;
+gap: 8px;
+border: 1px solid rgba(255, 255, 255, 0);
+border-radius: 12px;
+padding: 8px 12px;
+width: 279px;
+height: 42px;
+background: rgba(13, 11, 10, 0.05);
+}
+.footer-subscribe-btn {
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 8px;
+border: 1px solid rgba(255, 255, 255, 0);
+border-radius: 100px;
+padding: 10px 24px;
+width: 279px;
+height: 46px;
+background: rgba(13, 11, 10, 0.05);
+font-weight: 500;
+font-size: 16px; 
+line-height: 1.6;
+color: #0d0b0a;
+}
+.footer-subscribe-btn:hover {
+    background-color: #EDEBAD;
+    color: #38598B;
+  }
+  
+.modal-check-text{
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+    font-weight: 400;
+font-size: 12px;
+line-height: 1.6;
+color: #0d0b0a;
+width: none;
+
+}
+.footer-links {
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 40px;
+padding-top: 48px;
+width: 279px;
+
+}
+.footer-section {
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 12px;
+width: 279px;
+height: 190px;
+}
+.footer-section-media {
+    display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+gap: 12px;
+width: 279px;
+height: 198px;
+}
+.footer-links-text {
+    font-weight: 600;
+font-size: 16px;
+line-height: 1.6;
+color: #0d0b0a;
+}
+.footer-links-item {
+    font-weight: 400;
+font-size: 14px;
+line-height: 1.6;
+color: #0d0b0a;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: row;
+gap: 0px;
+padding: 8px 0px;
+width: 300px;
+height: 38px;
+}
+.footer-media-item {
+    display: flex;
+align-items: center;
+justify-content: flex-start;
+flex-direction: row;
+gap: 12px;
+padding: 8px 0px;
+width: 300px;
+height: 40px;
+}
+.media-text {
+    font-weight: 400;
+font-size: 14px;
+line-height: 1.6;
+color: #0d0b0a;
+padding-left: 12px;
+cursor: pointer;
+}
+.footer-media-icon .footer-icons {
+    fill: #0d0b0a;
+    transition: fill 0.3s ease;
+  }
+  .footer-media-icon:hover {
+    background-color: #38598B;
+  }
+  
+  .footer-media-icon:hover .footer-icons {
+    fill: #fff;
+  }
+
+.footer-copyright {
+    font-weight: 400;
+font-size: 14px; 
+line-height: 1.6;
+color: #0d0b0a;
+padding-top: 48px;
+}
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-    
-}
+    .footer{
+align-items: center;
+padding: 40px 32px;
+    }
+    .footer .container {
+gap: 40px;
+padding: 40px 32px;
+    }
+    .flex-foot {
+gap: 24px;
+    }
+    .footer-text {
+        width: 100%;
+        max-width: none;
+        font-size: 16px;
+        text-align: left; 
 
+    }
+    .footer-subscribe-form {
+        display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: row;
+gap: 16px;
+        width: 640px;
+      }
+    .footer-subscribe-input {
+width: 546px;
+height: 42px;
+    }
+    .footer-subscribe-btn {
+gap: 8px;
+width: 78px;
+height: 46px;
+    }
+    .modal-check-text {
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: row;
+    }
+    .footer-links {
+justify-content: space-between;
+flex-direction: row;
+width: 640px;
+height: 202px;
+    }
+    .footer-section {
+        width: 300px;
+        height: 194px;
+gap: 16px;
+    }
+    .footer-section-media {
+        width: 300px;
+height: 202px;
+gap: 16px;
+    }
+    .footer-copyright {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+}
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1336px) {
+    .footer {
+        padding: 64px;
+    }
+    .footer .container  {
+        display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+flex-direction: row;
+gap: 128px;
+padding: 48px;
+width: 1312px;
+height: 329px;
+max-width: 100%;
 
-}
+    }
+    .flex-foot {
+width: 595px;
+height: 233px;
+    }
+    .footer-subscribe-input {
+width: 501px;
+    }
+    .footer-links {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    
+      .footer-section, .footer-section-media {
+        flex-direction: column;
+        width: 165px;
+height: 202px;
+      }
+      .footer-copyright-desktop {
+        display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+        font-weight: 400;
+        font-size: 14px; 
+        line-height: 1.6;
+        color: #0d0b0a;
 
+      }
+      .footer-copyright {
+        display: none;
+    }
+      .footer-subscribe-form {
+        width: 595px;
+      }
+    }
 /* Retina */
 @media only screen and (min-resolution: 192dpi) {
-
+    
 }
