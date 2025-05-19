@@ -44,6 +44,10 @@
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+
   .gallery {
     padding: 40px 0;
   }
@@ -70,6 +74,10 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1336px) {
+  .container {
+    padding: 0 64px;
+  }
+
   .gallery {
     padding: 112px 0;
   }
