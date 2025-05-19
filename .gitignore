@@ -23,5 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-# pull requast list
+# pull requests list 
 pullrequests-list.txt
