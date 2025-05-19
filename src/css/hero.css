@@ -53,7 +53,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-
+padding-right: 14px;
 }
 .button-join{
     border: 1px solid #c2d9fc;
@@ -66,6 +66,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-learn-more{
     border: 1px solid rgba(255, 255, 255, 0);
@@ -78,6 +79,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
@@ -90,7 +92,7 @@
         min-height: 359px;
     }
     .hero-content {
-        padding: 24px 0 24px 32px;
+        padding: 24px 32px;
         gap:8px;
     }
     
@@ -125,12 +127,7 @@
     .hero-buttons{
         flex-direction: row;
     }
-       .button-join:hover,  .button-join:focus{
-        background-color: #88B6FB;
-       }
-       .button-learn-more:hover, .button-learn-more:focus{
-       background-color: #EDEBAD
-       }
+       
     }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1336px) {
@@ -161,6 +158,15 @@
     .hero-text {
         font-size: 18px;
     }
+        .button-join:hover,
+        .button-join:focus {
+            background-color: #88B6FB;
+        }
+    
+        .button-learn-more:hover,
+        .button-learn-more:focus {
+            background-color: #EDEBAD
+        }
 }
 
 /* Retina */
