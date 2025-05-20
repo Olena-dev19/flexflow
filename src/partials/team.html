@@ -11,14 +11,14 @@
             <!-- Liam -->
             <li class="team-card">
                 <picture class="team-card-picture">
-                    <source srcset="/img/team/liam.jpg 1x, /img/team/liam-@2x.jpg 2x" media="(min-width: 1440px)" />
-                    <source srcset="/img/team/liam-mob.jpg 1x, /img/team/liam-mob-@2x.jpg 2x"
-                        media="(max-width: 768px)" />
-                    <img src="/img/team/liam.jpg" alt="Liam Johnson" width="343" height="221" />
+                    <source srcset="/img/team/liam-mob.jpg 1x, /img/team/liam-mob-2x.jpg 2x" media="(max-width: 768px)" />
+                    <source srcset="/img/team/liam.jpg 1x, /img/team/liam-2x.jpg 2x" media="(min-width: 1440px)" />
+                    <img src="/img/team/liam-tab.jpg" srcset="/img/team/liam-tab.jpg 1x, /img/team/liam-tab-2x.jpg 2x"
+                        alt="Liam Johnson" /> 
                 </picture>
                 <h3>Liam Johnson</h3>
                 <p class="role">Yoga Instructor</p>
-                <p class="bio">Emma has over 10 years of experience in Hatha and Vinyasa yoga.</p>
+                <p class="bio">Liam specializes in mindfulness and stress reduction techniques through guided meditation.</p>
                 <div class="team-socials">
                     <a class="media-container-icon linkedin" href="https://www.linkedin.com/">
                         <svg class="mediaicons" width="18" height="18">
@@ -36,18 +36,22 @@
             <!-- Emma -->
             <li class="team-card">
                 <picture class="team-card-picture">
-                    <source srcset="/img/team/emma.jpg 1x, /img/team/emma-@2x.jpg 2x" media="(min-width: 1336px)" />
-                    <source srcset="/img/team/emma-mob.jpg 1x, /img/team/emma-mob-@2x.jpg 2x"
-                        media="(max-width: 768px)" />
-                    <img src="/img/team/emma.jpg" alt="Emma Stone" width="343" height="221" />
+                    <!-- Мобільні екрани до 768px -->
+                    <source srcset="/img/team/emma-mob.jpg 1x,/img/team/emma-mob-2x.jpg 2x" media="(max-width: 768px)"/>
+                    <!-- Десктопи від 1440px -->
+                    <source srcset="/img/team/emma.jpg 1x, /img/team/emma-2x.jpg 2x" 
+                    media="(min-width: 1440px)" />
+                
+                    <!-- Fallback для екранів 768px–1439px -->
+                    <img src="/img/team/emma-tab.jpg" srcset="/img/team/emma-tab.jpg 1x, /img/team/emma-tab-2x.jpg 2x" alt="Emma Stone"/>        
                 </picture>
+            
                 <h3>Emma Stone</h3>
                 <p class="role">Meditation Coach</p>
-                <p class="bio">Liam specializes in mindfulness and stress reduction techniques through guided
-                    meditation.
+                <p class="bio">Emma has over 10 years of experience in Hatha and Vinyasa yoga.
                 </p>
-                <div class="socials">
-                    <a class="media-container-icon linkedin" href="#">
+                <div class="team-socials">
+                    <a class="media-container-icon linkedin" href="https://www.linkedin.com/">
                         <svg class="mediaicons" width="18" height="18">
                             <use href="/img/sprite.svg#icon-linkedin"></use>
                         </svg>
@@ -58,16 +62,19 @@
             <!-- Sophia -->
             <li class="team-card">
                 <picture class="team-card-picture">
-                    <source srcset="/img/team/sophia.jpg 1x, /img/team/sophia-@2x.jpg 2x" media="(min-width: 1336px)" />
-                    <source srcset="/img/team/sophia-mob.jpg 1x, /img/team/sophia-mob-@2x.jpg 2x"
-                        media="(max-width: 768px)" />
-                    <img src="/img/team/sophia.jpg" alt="Sophia Lee" width="343" height="221" />
+                    <source srcset="/img/team/sophia-mob.jpg 1x, /img/team/sophia-mob-2x.jpg 2x" media="(max-width: 768px)" />
+                    
+                    <!-- Десктопи: від 1440px -->
+                    <source srcset="/img/team/sophia.jpg 1x, /img/team/sophia-2x.jpg 2x" media="(min-width: 1440px)" />
+                    
+                    <!-- Планшети та середні екрани: 769px – 1439px -->
+                    <img src="/img/team/sophia-tab.jpg" srcset="/img/team/sophia-tab.jpg 1x, /img/team/sophia-tab-2x.jpg 2x" alt="Sophia Lee" />
                 </picture>
                 <h3>Sophia Lee</h3>
                 <p class="role">Pilates Trainer</p>
                 <p class="bio">Sophia combines Pilates with yoga for a holistic fitness approach.</p>
-                <div class="socials">
-                    <a class="media-container-icon instagram" href="#">
+                <div class="team-socials">
+                    <a class="media-container-icon instagram" href="https://www.instagram.com/">
                         <svg class="mediaicons" width="24" height="24">
                             <use href="/img/sprite.svg#icon-instagram"></use>
                         </svg>
@@ -78,16 +85,20 @@
             <!-- Noah -->
             <li class="team-card">
                 <picture class="team-card-picture">
-                    <source srcset="/img/team/noah.jpg 1x, /img/team/noah-@2x.jpg 2x" media="(min-width: 1336px)" />
-                    <source srcset="/img/team/noah-mob.jpg 1x, /img/team/noah-mob-@2x.jpg 2x"
-                        media="(max-width: 768px)" />
-                    <img src="/img/team/noah.jpg" alt="Noah Brown" width="343" height="221" />
+                    <source srcset="/img/team/noah-mob.jpg 1x, /img/team/noah-mob-2x.jpg 2x" media="(max-width: 768px)" />
+                    
+                    <!-- Десктопи (від 1440px) -->
+                    <source srcset="/img/team/noah.jpg 1x, /img/team/noah-2x.jpg 2x" media="(min-width: 1440px)" />
+                    
+                    <!-- Середні екрани (769px–1439px) -->
+                    <img src="/img/team/noah.jpg" srcset="/img/team/noah-tab.jpg 1x, /img/team/noah-tab-2x.jpg 2x" 
+                    alt="Noah Brown" />
                 </picture>
                 <h3>Noah Brown</h3>
                 <p class="role">Yoga Therapist</p>
                 <p class="bio">Noah focuses on therapeutic yoga to aid recovery and enhance well-being.</p>
-                <div class="socials">
-                    <a class="media-container-icon linkedin" href="#">
+                <div class="team-socials">
+                    <a class="media-container-icon linkedin" href="https://www.linkedin.com/">
                         <svg class="mediaicons" width="18" height="18">
                             <use href="/img/sprite.svg#icon-linkedin"></use>
                         </svg>
@@ -98,27 +109,31 @@
             <!-- Ava -->
             <li class="team-card">
                 <picture class="team-card-picture">
-                    <source srcset="/img/team/ava.jpg 1x, /img/team/ava-@2x.jpg 2x" media="(min-width: 1336px)" />
-                    <source srcset="/img/team/ava-mob.jpg 1x, /img/team/ava-mob-@2x.jpg 2x"
-                        media="(max-width: 768px)" />
-                    <img src="/img/team/ava.jpg" alt="Ava Green" width="343" height="221" />
+                    <source srcset="/img/team/ava-mob.jpg 1x, /img/team/ava-mob-2x.jpg 2x" media="(max-width: 768px)" />
+                    
+                    <!-- Десктопи (від 1440px) -->
+                    <source srcset="/img/team/ava.jpg 1x, /img/team/ava-2x.jpg 2x" media="(min-width: 1440px)" />
+                    
+                    <!-- Середні екрани (від 769px до 1439px) -->
+                    <img src="/img/team/ava-tab.jpg" srcset="/img/team/ava-tab.jpg 1x, /img/team/ava-tab-2x.jpg 2x" alt="Ava Green"
+                    />
                 </picture>
                 <h3>Ava Green</h3>
                 <p class="role">Fitness Trainer</p>
                 <p class="bio">Ava integrates strength training with yoga to promote overall fitness.</p>
-                <div class="socials">
-                    <a class="media-container-icon facebook" href="#">
+                <div class="team-socials">
+                    <a class="media-container-icon facebook" href="https://www.facebook.com/">
                         <svg class="mediaicons" width="24" height="24">
                             <use href="/img/sprite.svg#icon-facebook"></use>
                         </svg>
                     </a>
 
-                    <a class="media-container-icon instagram" href="#">
+                    <a class="media-container-icon instagram" href=" https://www.instagram.com/">
                         <svg class="mediaicons" width="24" height="24">
                             <use href="/img/sprite.svg#icon-instagram"></use>
                         </svg>
                     </a>
-                    <a class="media-container-icon linkedin" href="#">
+                    <a class="media-container-icon linkedin" href="https://www.linkedin.com/">
                         <svg class="mediaicons" width="18" height="18">
                             <use href="/img/sprite.svg#icon-linkedin"></use>
                         </svg>
@@ -129,24 +144,28 @@
             <!-- Clark -->
             <li class="team-card">
                 <picture class="team-card-picture">
-                    <source srcset="/img/team/clark.jpg 1x, /img/team/clark-@2x.jpg 2x" media="(min-width: 1336px)" />
-                    <source srcset="/img/team/clark-mob.jpg 1x, /img/team/clark-mob-@2x.jpg 2x"
-                        media="(max-width: 768px)" />
-                    <img src="/img/team/clark.jpg" alt="Clark Thomas" width="343" height="221" />
+                    <source srcset="/img/team/clark-mob.jpg 1x, /img/team/clark-mob-2x.jpg 2x" media="(max-width: 768px)" />
+                    
+                    <!-- Десктопи (від 1440px) -->
+                    <source srcset="/img/team/clark.jpg 1x, /img/team/clark-2x.jpg 2x" media="(min-width: 1440px)" />
+                    
+                    <!-- Середні екрани (fallback 769px–1439px) -->
+                    <img src="/img/team/clark-tab.jpg" srcset="/img/team/clark-tab.jpg 1x, /img/team/clark-tab-2x.jpg 2x" alt="Clark Thomas"
+                    />
                 </picture>
                 <h3>Clark Thomas</h3>
                 <p class="role">Fitness Trainer</p>
                 <p class="bio">Clark specializes in mindfulness and stress reduction techniques through guided
                     meditation.
                 </p>
-                <div class="socials">
-                    <a class="media-container-icon facebook" href="#">
+                <div class="team-socials">
+                    <a class="media-container-icon facebook" href="https://www.facebook.com/">
                         <svg class="mediaicons" width="24" height="24">
                             <use href="/img/sprite.svg#icon-facebook"></use>
                         </svg>
                     </a>
 
-                    <a class="media-container-icon linkedin" href="#">
+                    <a class="media-container-icon linkedin" href="https://www.linkedin.com/">
                         <svg class="mediaicons" width="18" height="18">
                             <use href="/img/sprite.svg#icon-linkedin"></use>
                         </svg>
