@@ -1,21 +1,21 @@
 <section id="#yoga-classes" class="yoga-classes">
-  <div class="program-container">
-    <div class="program-main">
-      <small class="program-small">Explore</small>
+  <div class="container">
+      <p class="program-small">Explore</p>
       <h2 class="program-h2">Discover Our Most Popular Yoga Programs</h2>
       <p class="program-subtitle">
         Join our community and elevate your practice with our expertly designed
         yoga programs. Each course is tailored to meet various skill levels and
         personal goals.
       </p>
-    </div>
+    
 
     <ul class="programs">
       <li class="program-card">
         <img
           class="program-image"
-          src="./images/first-yoga-classes.jpg"
-          srcset="./images/first-yoga-classes@2x.jpg 2x"
+          src="/img/first-yoga-classes.jpg"
+          srcset="/img/first-yoga-classes.jpg 1x,
+          /img/first-yoga-classes@2x.jpg 2x"
           alt="Group Yoga"
         />
         <div class="program-card-content">
@@ -27,7 +27,9 @@
       <li class="program-card">
         <img
           class="program-image"
-          src="./images/second-yoga-classes.jpg"
+          src="/img/second-yoga-classes.jpg"
+          srcset="/img/second-yoga-classes.jpg 1x,
+          /img/second-yoga-classes@2x.jpg 2x"
           alt="Solo Yoga"
         />
         <div class="program-card-content">
@@ -41,11 +43,10 @@
       <li class="program-card">
         <img
           class="program-image"
-          src="./images/third-yoga-classes.jpg"
+          src="/img/third-yoga-classes.jpg"
           srcset="
-            ./images/third-yoga-classes.jpg    1x,
-            ./images/third-yoga-classes@2x.jpg 2x
-          "
+            /img/third-yoga-classes.jpg 1x,
+            /img/third-yoga-classes@2x.jpg 2x"
           alt="Restorative Yoga Pose"
         />
         <div class="program-card-content">
@@ -58,8 +59,9 @@
         </div>
       </li>
     </ul>
-    <a href="#price">
-      <button class="program-button">Join now</button>
-    </a>
+    <div class="program-btn-wrapper">
+      <a href="#price" class="program-button-mob">Join</a>
+      <a href="#price" class="program-button">Join now</a>
+    </div>
   </div>
 </section>
