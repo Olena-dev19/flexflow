@@ -127,7 +127,7 @@
   .tm-item:hover,
   .tm-item:focus {
     transform: scale(1.05);
-    transition: cubic-bezier(0.075, 0.82, 0.165, 0.25);
+    transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 0.25);
   }
   .tm-title {
     margin: bottom 24px;
