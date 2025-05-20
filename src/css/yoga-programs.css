@@ -1,9 +1,213 @@
-/* Yoga-programs */
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {}
+.yoga-classes {
+  padding: 64px 0;
+  background-color: #dfebeb;
+}
+.program-small {
 
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1336px) {}
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 12px;
+}
 
-/* Retina */
-@media only screen and (min-resolution: 192dpi) {}
+
+.program-h2 {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.program-subtitle {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.programs {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+}
+
+.program-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 22px;
+  width: 100%;
+  gap: 24px;
+  overflow: hidden;
+  min-width: 250px;
+}
+
+.program-card img {
+  width: 100%;
+  max-height: 282px;
+  display: block;
+  border-radius: 22px;
+}
+
+.program-card-content {
+ 
+}
+
+.program-h3 {
+  font-family: Cabin, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.program-card p {
+  text-align: center;
+}
+
+.program-card:last-of-type {
+  margin-bottom: 48px;
+}
+
+.program-button-mob {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c2d9fc;
+  border: none;
+  min-width: 343px;
+  min-height: 46px;
+  border-radius: 100px;
+  font-weight: 500;
+}
+.program-button {
+  display: none;
+  background-color: #c2d9fc;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  font-weight: 500;
+  min-width: 343px;
+  min-height: 46px;
+  cursor: pointer;
+  transition: background-color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.program-button:hover {
+  background-color: #9badc9;
+}
+
+@media only screen and (min-width: 768px) {
+  .yoga-classes {
+    background-color: #f2fafa;
+    padding: 40px 0;
+  }
+  .program-small {
+    margin-bottom: 16px;
+  }
+    .program-h2 {
+      margin-bottom: 24px;
+    }
+    .program-subtitle {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+  .programs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 27px;
+    justify-content: center;
+    align-items: stretch;
+  }
+    .program-card img {
+      min-width: 340px;
+    }
+
+  
+
+  .program-card {
+    width: calc((100% - 24px) / 2);
+    gap: 16px;
+    
+  }
+  .program-h3 {
+    margin-bottom: 0;
+  }
+
+  .program-card:nth-child(3) {
+    min-width: 704px;
+   
+  }
+
+  .program-card:last-of-type {
+    margin-bottom: 61px;
+  }
+   
+  .program-button-mob {
+    display: none;
+    }
+    .program-btn-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  .program-button {
+      display: flex;
+      min-width: 110px;
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1336px) {
+  .yoga-classes {
+    padding: 112px 0;
+  }
+  .program-h2 {
+    font-size: 52px;
+  }
+
+  .programs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+    .program-card:nth-child(3) {
+      min-width: 421px;
+    }
+
+  .program-card {
+    gap: 32px;
+    min-width: 421px;
+    transition: transform 0.5s ease;
+  }
+  
+
+  .program-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .program-h3 {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+    .program-card:last-of-type {
+      margin-bottom: 0 px;
+    }
+    .program-button:hover {
+       background-color: #88B6FB        
+    }
+ 
+  }
