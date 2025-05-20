@@ -1,196 +1,188 @@
 :root {
-    --font-family: "Sarabun", sans-serif;
-    --second-family: "Cabin", sans-serif;
-    --third-family: "Roboto", sans-serif;
+  --font-family: 'Sarabun', sans-serif;
+  --second-family: 'Cabin', sans-serif;
+  --third-family: 'Roboto', sans-serif;
 }
 
 /* Hero */
 .hero {
-    padding-bottom: 48px;
+  padding-bottom: 48px;
 }
 
 .hero-container {
-    max-width: 375px;
-    /* padding: 0; */
+  max-width: 375px;
 }
 
 .hero-back-image {
-    background-image: url(/img/placeholder-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-width: 375px;
-    /* min-height: 301px; */
-    margin-bottom: 48px;
+  background-image: url(/img/placeholder-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 375px;
+  min-height: 301px;
+  margin-bottom: 48px;
 }
 
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    /* padding: 48px 16px; */
-    /* gap: 20px; */
+  display: flex;
+  flex-direction: column;
 }
 
 .dv-hero-title {
-    padding: 0;
-    margin-bottom: 20px;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .hero-title {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-    color: #0D0B0A;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #0d0b0a;
 }
 
 .hero-dscr {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .hero-text {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 24pх;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24pх;
 }
 
 .hero-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding-right: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-right: 14px;
 }
 
 .button-join {
-    border: 1px solid #C2D9FC;
-    border-radius: 100px;
-    padding: 10px 0;
-    text-align: center;
-    min-height: 46px;
-    background: #C2D9FC;
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  padding: 10px 0;
+  text-align: center;
+  min-height: 46px;
+  background: #c2d9fc;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-learn-more {
-    border: 1px solid rgba(255, 255, 255, 0);
-    border-radius: 100px;
-    padding: 10px 0;
-    text-align: center;
-    min-height: 46px;
-    background: rgba(13, 11, 10, 0.05);
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 100px;
+  padding: 10px 0;
+  text-align: center;
+  min-height: 46px;
+  background: rgba(13, 11, 10, 0.05);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-    .hero-container {
-        max-width: 768px;
-    }
+  .hero-container {
+    max-width: 768px;
+  }
 
-    .hero-back-image {
-        min-width: 768px;
-        min-height: 359px;
-    }
+  .hero-back-image {
+    min-width: 768px;
+    min-height: 359px;
+  }
 
-    .hero-content {
-        padding: 24px 32px;
-        gap: 8px;
-    }
+  .hero-title {
+    max-width: 423px;
+  }
 
-    .hero-title {
-        max-width: 423px;
-    }
+  .hero-dscr {
+    max-width: 641px;
+    gap: 32px;
+  }
 
-    .hero-dscr {
-        max-width: 641px;
-        gap: 32px;
-        padding-top: 8px;
-    }
+  .hero-text {
+    font-size: 18px;
+  }
 
-    .hero-text {
-        font-size: 18px;
-    }
+  .hero-buttons {
+    flex-direction: row;
+    gap: 16px;
+  }
 
-    .hero-buttons {
-        flex-direction: row;
-        gap: 16px;
-    }
+  .button-join {
+    min-width: 144px;
+    min-height: 46px;
+    padding: 10px 24px;
+  }
 
-    .button-join {
-        min-width: 144px;
-        min-height: 46px;
-        padding: 10px 24px;
-    }
+  .button-learn-more {
+    min-width: 144px;
+    min-height: 46px;
+    padding: 10px 24px;
+  }
 
-    .button-learn-more {
-        min-width: 144px;
-        min-height: 46px;
-        padding: 10px 24px;
-    }
-
-    .hero-buttons {
-        flex-direction: row;
-    }
+  .hero-buttons {
+    flex-direction: row;
+  }
 }
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1336px) {
-    .hero-container {
-        max-width: 1440px;
-    }
+  .hero-container {
+    max-width: 1440px;
+  }
 
-    .hero-back-image {
-        min-width: 1440px;
-        min-height: 684px;
-    }
+  .hero-back-image {
+    min-width: 1440px;
+    min-height: 684px;
+  }
 
-    .hero-content {
-        flex-direction: row;
-        gap: 24px;
-        padding: 80px 64px;
-    }
+  .hero-content {
+    flex-direction: row;
+    gap: 24px;
+    padding: 80px 64px;
+  }
 
-    .hero-title {
-        font-size: 72px;
-        max-width: 644px;
-    }
+  .hero-title {
+    font-size: 72px;
+    max-width: 644px;
+  }
 
-    .hero-dscr {
-        max-width: 641px;
-        gap: 32px;
-        padding-top: 8px;
-    }
+  .hero-dscr {
+    max-width: 641px;
+    gap: 32px;
+    padding-top: 8px;
+  }
 
-    .hero-text {
-        font-size: 18px;
-    }
+  .hero-text {
+    font-size: 18px;
+  }
 
-    .button-join:hover,
-    .button-join:focus {
-        background-color: #88B6FB;
-    }
+  .button-join:hover,
+  .button-join:focus {
+    background-color: #88b6fb;
+  }
 
-    .button-learn-more:hover,
-    .button-learn-more:focus {
-        background-color: #EDEBAD;
-    }
+  .button-learn-more:hover,
+  .button-learn-more:focus {
+    background-color: #edebad;
+  }
 }
 
 /* Retina */
 @media only screen and (min-resolution: 192dpi) {
-    .hero-back-image {
-        background-image: url(/img/placeholder-image@2x.jpg);
-    } }
+  .hero-back-image {
+    background-image: url(/img/placeholder-image@2x.jpg);
+  }
+}
