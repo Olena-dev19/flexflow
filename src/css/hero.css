@@ -93,6 +93,10 @@
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 24px;
+  }
+
   .hero-container {
     max-width: 768px;
   }
@@ -100,6 +104,7 @@
   .hero-back-image {
     min-width: 768px;
     min-height: 359px;
+    margin-bottom: 24px;
   }
 
   .hero-title {
@@ -139,6 +144,10 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1336px) {
+  .hero {
+    padding-bottom: 80px;
+  }
+
   .hero-container {
     max-width: 1440px;
   }
@@ -146,12 +155,12 @@
   .hero-back-image {
     min-width: 1440px;
     min-height: 684px;
+    margin-bottom: 80px;
   }
 
   .hero-content {
     flex-direction: row;
     gap: 24px;
-    padding: 80px 64px;
   }
 
   .hero-title {
@@ -162,7 +171,6 @@
   .hero-dscr {
     max-width: 641px;
     gap: 32px;
-    padding-top: 8px;
   }
 
   .hero-text {
