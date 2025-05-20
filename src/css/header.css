@@ -89,10 +89,10 @@ border: 1px solid #c2d9fc;
 }
 
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1336px) {
+@media only screen and (min-width: 1440px) {
 
 .header-container {
-    min-width: 1336px;
+    min-width: 1440px;
     min-height: 72px;
     padding: 15px 64px;
 

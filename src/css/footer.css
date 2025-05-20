@@ -297,7 +297,7 @@ gap: 16px;
     }
 }
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1336px) {
+@media only screen and (min-width: 1440px) {
     .footer {
         padding: 64px;
     }

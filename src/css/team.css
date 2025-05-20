@@ -12,109 +12,95 @@
 @media only screen and (min-resolution: 192dpi) {}
 
 */
-
-.team-section {
-    padding: 40px 16px;
-    text-align: center;
+.team {
+    padding: 64px 0;
 }
 
-.team-header .subtitle {
-    font-family: "Sarabun", sans-serif;
+
+
+.team-subtitle {
     font-weight: 600;
-    font-size: 16px;
+    line-height: 1.5;
     text-align: center;
-    color: #0D0B0A;
+    margin-bottom: 12px;
 }
 
-.team-header h2 {
+.team-title {
     font-family: "Cabin", sans-serif;
     font-weight: 400;
-    font-size: 52px;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
     text-align: center;
-    margin: 10px 0;
+    margin-bottom: 20px;
 }
 
-.team-header .description {
+
+.team-description {
     font-family: "Sarabun", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.6;
     text-align: center;
-    color: #0D0B0A;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
 }
 
 .team-grid {
-    display: grid;
-    gap: 24px;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
     justify-content: center;
-    align-items: stretch;
-    margin: 0 auto;
-    width: 100%;
-    padding: 0 16px;
-    box-sizing: border-box;
+    align-items: center;
 }
 
 .team-card {
     background: transparent;
-    padding: 16px;
     border-radius: 16px;
     box-shadow: none;
-    margin-bottom: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 343px;
+   
+
 }
 
-.team-card picture,
-.team-card img {
-    border-radius: 16px;
-    width: 100%;
-    height: auto;
-    max-width: 343px;
-    margin: 0 auto;
+.team-card-picture {
+    margin-bottom: 20px;
 }
 
 .team-card h3 {
-    font-family: "Sarabun", sans-serif;
     font-weight: 600;
     font-size: 18px;
-    letter-spacing: 0%;
+    line-height: 1.6;
     text-align: center;
-    margin: 12px 0 0;
 }
 
 .team-card .role {
-    font-family: "Sarabun", sans-serif;
     font-weight: 400;
-    font-size: 16px;
     text-align: center;
-    color: #0D0B0A;
-    margin-bottom: 8px;
-    margin-top: 0;
+    margin-bottom: 12px;
 }
 
 .team-card .bio {
-    max-width: 343px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "Sarabun", sans-serif;
     font-weight: 400;
-    font-size: 16px;
     text-align: center;
-    color: #0D0B0A;
+    margin-bottom: 20px;
 }
 
-.team-card .socials a {
-    margin: 0px;
-    display: inline-block;
+.team-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
 }
 
-.team-card .socials img {
-    width: 24px;
-    height: 24px;
+.media-container-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
+
+
 
 /* Tablet: 768px */
 @media only screen and (min-width: 768px) {
@@ -162,14 +148,7 @@
 
 }
 
-.media-container-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    transition: background-color 0.2s ease, box-shadow 0.2s ease;
-}
+
 
 /* Загальні стилі для всіх SVG */
 .media-container-icon svg {
