@@ -168,6 +168,10 @@
     max-width: 644px;
   }
 
+  .dv-hero-title {
+    margin-bottom: 0px;
+  }
+
   .hero-dscr {
     max-width: 641px;
     gap: 32px;
