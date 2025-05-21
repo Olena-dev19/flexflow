@@ -200,25 +200,33 @@
 
 .media-container-icon.linkedin:hover,
 .media-container-icon.linkedin:focus {
-    background-color: #4D5664;
+    background-color:#4D5664;
+    transition: background-color 0.3s ease;
 }
 
 .media-container-icon.linkedin:hover svg,
 .media-container-icon.linkedin:focus svg {
     fill: #fff;
+    background-color: #4D5664;
+    stroke: #4D5664;
+    transition: fill 0.3s ease, background-color 0.3s ease;
 }
 
 .media-container-icon.facebook:hover svg,
 .media-container-icon.facebook:focus svg {
-    fill: #4D5664;
+    fill: #fff;
+    stroke:  #4D5664;
 }
 
 /* --- Instagram: кругла, змінюється тільки svg --- */
 .media-container-icon.instagram {
     border-radius: 50%;
+    transition: fill 0.3s ease;
 }
 
 .media-container-icon.instagram:hover svg,
 .media-container-icon.instagram:focus svg {
     fill: #4D5664;
+    stroke: #fff;
+    transition: fill 0.3s ease;
 }
