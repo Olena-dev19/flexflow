@@ -37,7 +37,6 @@
 
 
 .team-description {
-    font-family: "Sarabun", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
@@ -59,14 +58,16 @@
     box-shadow: none;
     display: flex;
     flex-direction: column;
-   
-
+    height: 100%;
 }
 
 .team-card-picture {
     margin-bottom: 20px;
 }
-
+.team-card-picture img {
+    min-width: 343px;
+    border-radius: 16px;
+}
 .team-card h3 {
     font-weight: 600;
     font-size: 18px;
@@ -104,49 +105,73 @@
 
 /* Tablet: 768px */
 @media only screen and (min-width: 768px) {
-    .team-header h2 {
+    .team {
+        padding: 40px 0 0 0;
+    }
+    .team-subtitle {
+        margin-bottom: 16px;
+    }
+    .team-title {
         font-size: 52px;
+        margin-bottom: 24px;
     }
-
+    .team-description {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
     .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 32px;
-        max-width: 768px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        align-items: flex-start;
+        
     }
-
-    .team-card picture,
-    .team-card img {
-        max-width: 340px;
-        height: auto;
+    .team-card {
+        width: calc((100% - 24px) / 2)
     }
+    .team-card-picture {
+        
+        margin-bottom: 24px;
+    }
+    .team-card h3 {
+        font-size: 22px;
+    }
+    .team-card .role {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    .team-card .bio {
+        margin-bottom: 24px;
+    }
+    .team-socials {
+        gap: 14px;
+    }
+        
+    
 }
 
 /* Desktop: 1336px+ */
-@media only screen and (min-width: 1336px) {
-    .team-header h2 {
+@media only screen and (min-width: 1440px) {
+    .team {
+        padding: 112px 0;
+    }
+    .team-title {
         font-size: 52px;
     }
-
     .team-grid {
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 1200px;
-        gap: 40px;
+        align-items: center;
+        justify-content: space-between;
+        row-gap: 64px;
+        column-gap: 24px;
     }
 
-    .team-card picture,
-    .team-card img {
-        width: 421.333px;
-        height: auto;
+    .team-card {
+        width: calc((100% - 48px) / 3);
     }
 }
+   
 
-.team-card .socials {
-    display: flex;
-    justify-content: center;
-    gap: 4px;
-    margin-top: 12px;
 
-}
 
 
 
