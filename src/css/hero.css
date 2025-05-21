@@ -90,6 +90,14 @@
   line-height: 1.6;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.button-join:hover,
+.button-join:focus {
+  background-color: #88b6fb;
+}
+.button-learn-more:hover,
+.button-learn-more:focus {
+  background-color: #edebad;
+}
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
@@ -181,10 +189,7 @@
     font-size: 18px;
   }
 
-  .button-join:hover,
-  .button-join:focus {
-    background-color: #88b6fb;
-  }
+ 
 
   .button-learn-more:hover,
   .button-learn-more:focus {

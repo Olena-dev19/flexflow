@@ -79,6 +79,12 @@
     background-color: #c2d9fc;
 }
 
+.benefits__btn:hover,
+.benefits__btn:hover
+{
+    background-color: #88B6FB;
+}
+
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
     .benefits {
@@ -131,8 +137,5 @@
     .benefits__item-title {
         font-size: 28px;
         margin-bottom: 24px;
-    }
-    .benefits__btn:hover {
-        background-color: #88B6FB;
     }
 }
