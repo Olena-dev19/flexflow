@@ -232,7 +232,7 @@
     padding: 32px;
   }
   .pricing-card-item:hover {
-    transform: translate(0, 0) scale(1.1);
+    transform: translate(0, 0) scale(1.04);
   }
   .pricing-card-list {
     margin-bottom: 116px;
