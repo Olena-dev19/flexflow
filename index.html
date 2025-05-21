@@ -24,46 +24,39 @@
             rel="stylesheet">
     <title>YogaBloom</title>
     <script type="module" crossorigin src="/flexflow/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/flexflow/assets/index-iW83ifzh.css">
+    <link rel="stylesheet" crossorigin href="/flexflow/assets/index-BK3PRbrj.css">
   </head>
   <body>
     <header class="header">
   <div class="container header-container">
+    <button class="burger-btn" data-menu-open>
+      <svg width="16" height="18">
+        <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-menu"></use>
+      </svg>
+    </button>
 
-       
-      <button class="burger-btn">
-      
-        <svg width="16" height="18">
-          <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-menu"></use>
-        </svg>
-          </button>
-
-<nav class="header-nav">
+    <nav class="header-nav">
       <ul class="link-menu-dsk">
-        <li><a href="#yoga-classes" class="link-menu-list yoga-classes-header">Yoga Classes</a></li>
+        <li>
+          <a href="#yoga-classes" class="link-menu-list yoga-classes-header"
+            >Yoga Classes</a
+          >
+        </li>
         <li><a href="#team" class="link-menu-list">Team</a></li>
         <li><a href="#testimonials" class="link-menu-list">Testimonials</a></li>
         <li><a href="#price" class="link-menu-list">Pricing</a></li>
         <li><a href="#footer-contacts" class="link-menu-list">Contacts</a></li>
-    
       </ul>
     </nav>
-<a href="/index.html" class="logo-header">
-  <svg width="84" height="36">
-    <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-Logo"></use>
-  </svg>
-</a>
-<a href="#price" class="btn-desktop">
-  Join Now
-</a>
-<a href="#price" class="btn-mobile">
-  Join
-</a>
+    <a href="/index.html" class="logo-header">
+      <svg width="84" height="36">
+        <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-Logo"></use>
+      </svg>
+    </a>
+    <a href="#price" class="btn-desktop"> Join Now </a>
+    <a href="#price" class="btn-mobile"> Join </a>
   </div>
 </header>
-
-
-
 
 
     <main>
@@ -665,8 +658,9 @@
                         Community support group
                     </li>
                 </ul>
-                <button type="button" class="pricing-card-button" data-modal-one-open >Join</button>
-            </li>
+
+                <button type="button" class="pricing-card-button" data-modal-one-open>Join</button>
+
             <li class="pricing-card-item">
                 <h3 class="pricing-card-title">8 Sessions Package</h3>
                 <p class="pricing-card-item-price">$65</p>
@@ -693,59 +687,64 @@
                         Priority customer support
                     </li>
                 </ul>
-                <button type="button" class="pricing-card-button" data-modal-two-open >Join</button>
+
+                <button type="button" class="pricing-card-button" data-modal-two-open>Join</button>
             </li>
             <li class="pricing-card-item">
-                <div class="pricing-card-item-full-price">
-                    <h3 class="pricing-card-title pricing-card-title-last">12 Sessions Package</h3>
-                    <p class="pricing-card-item-price">$80</p>
-                </div>
-                <div class="pricing-card-full">
-                    <ul class="pricing-card-list-full">
-                        <li class="pricing-card-info">
-                            <svg width="18" height="13">
-                                <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-done">
-                                </use>
-                            </svg>
-                            8 Group Sessions
-                        </li>
-                        <li class="pricing-card-info">
-                            <svg width="18" height="13">
-                                <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-done">
-                                </use>
-                            </svg>
-                            4 Individual Sessions
-                        </li>
-                        <li class="pricing-card-info pricing-card-info-hidden">
-                            <svg width="18" height="13">
-                                <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-done">
-                                </use>
-                            </svg>
-                            Access to advanced classes
-                        </li>
-                        <li class="pricing-card-info">
-                            <svg width="18" height="13">
-                                <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-done">
-                                </use>
-                            </svg>
-                            Monthly yoga challenges
-                        </li>
-                        <li class="pricing-card-info">
-                            <svg width="18" height="13">
-                                <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-done">
-                                </use>
-                            </svg>
-                            Exclusive member discounts
-                        </li>
-                        <li class="pricing-card-info">
-                            <svg width="18" height="13">
-                                <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-done">
-                                </use>
-                            </svg>
-                            Community support group
-                        </li>
-                    </ul>
-                    <button type="button" class="pricing-card-button" data-modal-three-open>Join</button>
+                <div class="pricing-card-container">
+                    <div class="pricing-card-item-full-price">
+                        <h3 class="pricing-card-title pricing-card-title-last">12 Sessions Package</h3>
+                        <p class="pricing-card-item-price retreat">$80</p>
+                        <button type="button" class="pricing-card-button pricing-button-open" data-modal-three-open>Join</button>
+                    </div>
+                    <div class="pricing-card-full">
+                        <ul class="pricing-card-list-full">
+                            <li class="pricing-card-info">
+                                <svg width="18" height="13">
+                                    <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-done">
+                                    </use>
+                                </svg>
+                                8 Group Sessions
+                            </li>
+                            <li class="pricing-card-info">
+                                <svg width="18" height="13">
+                                    <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-done">
+                                    </use>
+                                </svg>
+                                4 Individual Sessions
+                            </li>
+                            <li class="pricing-card-info pricing-card-info-hidden">
+                                <svg width="18" height="13">
+                                    <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-done">
+                                    </use>
+                                </svg>
+                                Access to advanced classes
+                            </li>
+                            <li class="pricing-card-info">
+                                <svg width="18" height="13">
+                                    <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-done">
+                                    </use>
+                                </svg>
+                                Monthly yoga challenges
+                            </li>
+                            <li class="pricing-card-info">
+                                <svg width="18" height="13">
+                                    <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-done">
+                                    </use>
+                                </svg>
+                                Exclusive member discounts
+                            </li>
+                            <li class="pricing-card-info">
+                                <svg width="18" height="13">
+                                    <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-done">
+                                    </use>
+                                </svg>
+                                Community support group
+                            </li>
+                        </ul>
+                        <button type="button" class="pricing-card-button pricing-button-hidden" data-modal-three-open>Join</button>
+                    </div>
+
                 </div>
             </li>
         </ul>
@@ -755,140 +754,134 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="visually-hidden">Footer</p> 
+    <p class="visually-hidden">Footer</p>
     <div class="footer-check">
-    <div class="flex-foot">
-      <a class="footer-logo" href="./footer.html">
-      <svg class="footer-logo-svg">
-        <use href="../img/sprite.svg#icon-Logo"></use>
-      </svg>
-    </a>
-    <p class="footer-text">Subscribe to our newsletter for the latest updates on our yoga classes and events.</p>
-    <form class="footer-subscribe-form"> 
-      <label class="footer-subscribe-label">
-        <input
-          type="email"
-          class="footer-subscribe-input"
-          name="email"
-          placeholder="Your email here"
-          required
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-        />
+      <div class="flex-foot">
+        <a class="footer-logo" href="./footer.html">
+          <svg class="footer-logo-svg">
+            <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-Logo"></use>
+          </svg>
+        </a>
+        <p class="footer-text">
+          Subscribe to our newsletter for the latest updates on our yoga classes
+          and events.
+        </p>
+        <form class="footer-subscribe-form">
+          <label class="footer-subscribe-label">
+            <input
+              type="email"
+              class="footer-subscribe-input"
+              name="email"
+              placeholder="Your email here"
+              required
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            />
+          </label>
+          <button type="submit" class="footer-subscribe-btn">Join</button>
+        </form>
+      </div>
+      <label class="modal-check-text">
+        By subscribing, you consent to our Privacy Policy and agree to receive
+        updates.
       </label>
-      <button type="submit" class="footer-subscribe-btn">Join</button>
-      
-    </form>
-    
+      <p class="footer-copyright-desktop">
+        © 2025 Yoga Studio. All rights reserved.
+      </p>
     </div>
-    <label class="modal-check-text">
-      By subscribing, you consent to our Privacy Policy and agree to receive updates.
-    </label>
-    <p class="footer-copyright-desktop">© 2025 Yoga Studio. All rights reserved.</p>
-  </div>
 
-  <div class="footer-links">
-    <div class="footer-section">
-    <p class="footer-links-text">Quick Links</p>
-    <ul class="footer-links-list">
-      <li class="footer-links-item"><a href="#yoga">Yoga Classes</a></li>
-      <li class="footer-links-item"><a href="#team">Team</a></li>
-      <li class="footer-links-item"><a href="#pricing">Pricing</a></li>
-      <li class="footer-links-item"><a href="#contacts">Contacts</a></li>
-    </ul>
-  </div>
-  <div class="footer-section-media">
-    <p class="footer-links-text">Connect With Us</p>
-    <div class="icons-footer">
-      <ul class="footer-media-list">
-          <li class="footer-media-item">
+    <div class="footer-links">
+      <div class="footer-section">
+        <p class="footer-links-text">Quick Links</p>
+        <ul class="footer-links-list">
+          <li class="footer-links-item"><a href="#yoga">Yoga Classes</a></li>
+          <li class="footer-links-item"><a href="#team">Team</a></li>
+          <li class="footer-links-item"><a href="#pricing">Pricing</a></li>
+          <li class="footer-links-item"><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+      <div class="footer-section-media">
+        <p class="footer-links-text">Connect With Us</p>
+        <div class="icons-footer">
+          <ul class="footer-media-list">
+            <li class="footer-media-item">
               <a class="footer-media-icon" href="https://www.facebook.com/">
-                  <svg class="footer-icons" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-facebook"></use>
-                  </svg>
+                <svg class="footer-icons" width="24" height="24">
+                  <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-facebook"></use>
+                </svg>
               </a>
               <span class="media-text">Facebook</span>
-          </li>
-          <li class="footer-media-item">
+            </li>
+            <li class="footer-media-item">
               <a class="footer-media-icon" href="https://www.instagram.com">
-                  <svg class="footer-icons" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-instagram"></use>
-                  </svg>
+                <svg class="footer-icons" width="24" height="24">
+                  <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-instagram"></use>
+                </svg>
               </a>
               <span class="media-text">Instagram</span>
-          </li>
-          <li class="footer-media-item">
+            </li>
+            <li class="footer-media-item">
               <a class="footer-media-icon" href="https://www.linkedin.com/">
                 <div class="footer-container-link">
                   <svg class="footer-icons" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-linkedin"></use>
+                    <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-linkedin"></use>
                   </svg>
                 </div>
               </a>
               <span class="media-text">LinkedIn</span>
-          </li>
-          <li class="footer-media-item">
+            </li>
+            <li class="footer-media-item">
               <a class="footer-media-icon" href="https://www.youtube.com/">
-                  <svg class="footer-icons" width="24" height="24">
-                      <use href="../img/sprite.svg#icon-Youtube"></use>
-                  </svg>
+                <svg class="footer-icons" width="24" height="24">
+                  <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-Youtube"></use>
+                </svg>
               </a>
               <span class="media-text">Youtube</span>
-          </li>
-      </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-    </div>
-  </div>
-   <p class="footer-copyright">© 2025 Yoga Studio. All rights reserved.</p>
+    <p class="footer-copyright">© 2025 Yoga Studio. All rights reserved.</p>
   </div>
 </footer>
 
-    <div class="mobile-menu">
-  
-    <div class="header-mobile-menu">
-
-<ul class="mob-menu-head">
-
-            <li><button class="menu-close-btn">
-
-                    <svg width="12" height="12">
-                        <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-close"></use>
-                    </svg>
-                </button>
-            </li>
-            <li>
-                <a href="./index.html">
-                    <svg width="84" height="36">
-                        <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-Logo"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="#price" class="btn-tab-menu">
-                    Join Now
-                </a>
-                <a href="#price" class="btn-mobile-menu">
-                    Join
-                </a>
-            </li>
-        </ul>
-
-      <div class="mob-menu-list-box">
-        
-        <ul class="mob-menu-list">
-            <li><a href="#yoga-classes" class="link-menu-list">Yoga Classes</a></li>
-            <li><a href="#team" class="link-menu-list">Team</a></li>
-            <li><a href="#testimonials" class="link-menu-list">Testimonials</a></li>
-            <li><a href="#price" class="link-menu-list">Pricing</a></li>
-            <li><a href="#footer-contacts" class="link-menu-list">Contacts</a></li>
-
-        </ul>
-
-        <a href="#price" class="btn-mobile-menu-scnd">
-            Join
+    <div class="mobile-menu" data-menu>
+  <div class="header-mobile-menu">
+    <ul class="mob-menu-head">
+      <li>
+        <button class="menu-close-btn">
+          <svg width="12" height="12">
+            <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-close" data-menu-close></use>
+          </svg>
+        </button>
+      </li>
+      <li>
+        <a href="./index.html">
+          <svg width="84" height="36">
+            <use href="/flexflow/assets/sprite-CUraA7-K.svg#icon-Logo"></use>
+          </svg>
         </a>
+      </li>
+      <li>
+        <a href="#price" class="btn-tab-menu"> Join Now </a>
+        <a href="#price" class="btn-mobile-menu"> Join </a>
+      </li>
+    </ul>
+
+    <div class="mob-menu-list-box">
+      <ul class="mob-menu-list">
+        <li><a href="#yoga-classes" class="link-menu-list">Yoga Classes</a></li>
+        <li><a href="#team" class="link-menu-list">Team</a></li>
+        <li><a href="#testimonials" class="link-menu-list">Testimonials</a></li>
+        <li><a href="#price" class="link-menu-list">Pricing</a></li>
+        <li><a href="#footer-contacts" class="link-menu-list">Contacts</a></li>
+      </ul>
+
+      <a href="#price" class="btn-mobile-menu-scnd"> Join </a>
     </div>
-    </div>
-    </div>
+  </div>
+</div>
+
     <!-- Modal-one -->
 <div class="menu-modal-overlay" data-modal-one>
   <div class="menu-modal-window">
